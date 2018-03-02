@@ -4,7 +4,7 @@ import React from 'react';
 
 const Toolbar = ({onAdd, onRemove}) => (
   <nav className="toolbar">
-    <button>+ Add note</button>
-    <button>Delete note</button>
+    <button onClick={onAdd}>+ Add note</button>
+    <button onClick={onRemove}>Delete note</button>
   </nav>
 );

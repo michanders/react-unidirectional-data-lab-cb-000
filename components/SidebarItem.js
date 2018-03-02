@@ -5,12 +5,11 @@ import classNames from 'classnames';
 
 export default class SidebarItem extends React.Component {
   static getTitle (file) {
-    // Find first non-empty line and use as title.
     return file.split('\n').find(line => line.length);
   }
   render() {
     return (
-      <li>
+      <li className="sidebar__item">
         <a>
         </a>
       </li>

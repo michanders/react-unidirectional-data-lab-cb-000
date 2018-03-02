@@ -10,7 +10,7 @@ export default class SidebarItem extends React.Component {
   render() {
     return (
       <li className={classNames('sidebar__item', {'sidebar__item--selected':this.props.isSelected})}>
-        <a href='#' onClick={this.props.onClick} className='sidebar__link'>{this.props.getTitle} || <em>Untitled</em></a>
+        <a href='#' onClick={this.props.onClick} className='sidebar__link'>{this.props.getTitle(file)} || <em>Untitled</em></a>
       </li>
     );
   }

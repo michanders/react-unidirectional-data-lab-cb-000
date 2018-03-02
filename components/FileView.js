@@ -6,7 +6,7 @@ import Toolbar from './Toolbar';
 export default class FileView extends React.Component {
   render() {
     return (
-      <div>
+      <div className="file-view">
       </div>
     );
   }

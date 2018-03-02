@@ -11,16 +11,9 @@ export default class Sidebar extends React.Component {
 
     return (
       <ul className="sidebar">
-        {
-          files.map((file, i) => (
-            <SidebarItem
-            isSelected={selectedFileIndex === i}
-            key={i}
-            file={file}
-            onClick={this.handleClick.bind(null, i)}
-            />
-          ))
-        }
+        { files.map((file, i) => (
+          <SidebarItem isSelected={selectedFileIndex === i} key={i} file={file} onClick={this.handleClick.bind(null, i)}/>
+        ))}
       </ul>
     );
   }

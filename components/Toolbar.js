@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-const Toolbar = ({onAdd, onRemove}) => (
+const Toolbar = () => (
   <nav>
-    <button onClick={onAdd}>+ Add note</button>
-    <button onClick={onRemove}>Delete note</button>
+    <button onClick={this.props.onAdd}>+ Add note</button>
+    <button onClick={this.props.onRemove}>Delete note</button>
   </nav>
 );
 

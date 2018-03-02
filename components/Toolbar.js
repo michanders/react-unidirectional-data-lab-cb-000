@@ -8,3 +8,5 @@ const Toolbar = ({onAdd, onRemove}) => (
     <button onClick={onRemove}>Delete note</button>
   </nav>
 );
+
+export default Toolbar;
